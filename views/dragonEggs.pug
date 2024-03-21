@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   
+  -
+  .container-fluid
+  .row
+    - let results = [{ size: 'Small', color: 'Green', rarity: 'Common' },{ size: 'Medium', color: 'Red', rarity: 'Rare' },{ size: 'Large', color: 'Blue', rarity: 'Legendary' }]
+    each result in results
+      .col-sm-2
+        div
+          p Size: #{result.size}
+          p Color: #{result.color}
+          p Rarity: #{result.rarity}
