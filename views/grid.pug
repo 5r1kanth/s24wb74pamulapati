@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  if query && query.rows && query.cols
+      p Grid Rows: #{query.rows}
+      p Grid Columns: #{query.cols}
+  else
+      p No query parameters provided.
+
+  script.
+      console.log(`rows `+#{query.rows})
+      console.log(`cols `+#{query.cols})
