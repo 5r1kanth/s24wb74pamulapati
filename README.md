@@ -5,6 +5,6 @@ Server Hosted at - [Server](https://s24wb74pamulapati.onrender.com/)
 * Class: 
    * DragonEggs
 * Attributes:
-   * size (string)
+   * size (number)
    * color (string)
    * rarity (string)
